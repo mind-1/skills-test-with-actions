@@ -27,6 +27,7 @@ jobs:
 
       - name: Run markdown lint
         run: |
+          working-directory: .github
           npm install remark-cli remark-preset-lint-consistent
           npx remark . --use remark-present-lint-consistent --frail
            
